@@ -1,0 +1,363 @@
+/* ESTILOS GENERALES */
+html, body{
+    height: 100%;
+}
+/* Modificar el modelo de cajas de CSS */
+html{
+	box-sizing: border-box;
+}
+*, *:before, *::after{
+	box-sizing: inherit
+}
+/* Resetear margenes y padding */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+   font-family:"Open sans", sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto
+}
+/* ESTILOS DE LOS CONTENIDOS */
+/* Estilos de header */
+header {
+	background-color: #8decd8;
+
+	}
+#logo {
+	float: left;
+}
+#navegation {
+	display: flex;
+	justify-content: space-between;
+}
+
+#main-nav {
+	display: flex;
+	list-style: none;
+	font-family: 'Lato', sans-serif;
+	float: right;
+}
+
+#main-nav li a {
+	color: #141212;
+	text-decoration: none;
+	padding: 25px 0.9em;
+	display: inline-block;
+}
+
+#main-nav li:last-child {
+	color: #19181a;
+	padding: 25px 0.9em;
+}
+#main-nav li a:hover {
+    background-color: #73cfb8;
+}
+/* Section 1 */
+article > section:nth-child(1) {
+    background-image: linear-gradient(to left top, rgba(5 154 251 / 58%), rgba(8, 195, 250, 0.83)), url(../images/agua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+#intro {
+    display: flex;
+    padding: 50px 0;
+    flex-flow: row wrap;
+    height: 100%;
+    min-height: 600px;
+}
+#descripcion {
+	flex-basis: 60%;
+	padding: 0 1rem 0 0;
+    flex-grow: 2;
+    color: #ECF7EC;
+}
+h1 {
+	font-size: 2.8rem;
+	font-family: "Inconsolata", monospace;
+	margin-bottom: 25px;
+}
+#descripcion p {
+    margin-bottom: 33px;
+    line-height: 1.65;
+}
+#descripcion i {
+    font-size: 0.9rem;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #0d0e0e;
+    color: #bc9ed7;
+}
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.90rem;
+}
+input[type="text"], input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    padding: 0 1rem;
+    margin: 5px 0;
+    border: 1px solid #E1DAED;
+}
+input[type="submit"] {
+    display: inline-block;
+    border: none;
+    background-color: rgb(42 229 44);
+    color: #0D0D0E;
+    width: 100%;
+    padding: 10px 1em;
+    margin: 25px auto;
+    font-size: 1rem;
+}
+small a{
+    color: #fff;
+}
+/* Seccion 2 */
+article > section:nth-child(2) {
+    padding: 60px 0;
+} 
+#seccionDos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    color: #0d0e0e;
+}
+#seccionDos i {
+    font-size: 2.5rem;
+    border: 1px solid;
+    padding: 48px 0;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    color: #21adff;
+    margin-bottom: 35px;
+}
+col.h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+/* Seccion 3 */
+article > section:nth-child(3) {
+    background-color: rgb(224 248 255 / 83%);
+    padding: 40px 0;
+}
+#seccionTres {
+    display: flex;
+    flex-flow: row wrap;
+}
+#seccionTres div {
+    flex-basis: 60%;
+    padding-right: 1.9rem;
+}
+h2 {
+    margin-bottom: 20px;
+}
+#seccionTres a {
+    display: inline-block;
+    background-color: #46e30d ;
+    color: #020807 ;
+    padding: 12px 10rem;
+    text-decoration: none;
+    margin: 25px 0;
+}
+video {
+    flex-basis: 40%;
+    width: 40%;
+    height: 100%;
+}
+/* Seccion 4 */
+article > section:nth-child(4) {
+    padding: 60px 0;
+    text-align: center;
+}
+#seccionCuatro {
+    display: flex;
+    justify-content: space-between;
+}
+.card img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.card {
+    margin: 30px 0.8em;
+    box-shadow: 2px 5px 1px #eee ;
+    padding-bottom: 20px;
+}
+.card p {
+    font-size: 0.9em;
+    padding: 12px 2em;
+}
+.card i {
+    font-size: 1.50rem;
+    color: #bd7ee5;
+    margin: 0 0.5rem;
+}
+/* Seccion 5 */
+article > section:nth-child(5) {
+    background-image: linear-gradient(to left top, rgba(5 154 251 / 58%), rgba(8, 195, 250, 0.83)), url(../images/fondo_inferior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right; 
+}
+#seccionCinco {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    min-height: 330px;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+}
+#seccionCinco h2 {
+     margin-bottom: 0;
+}
+#seccionCinco p {
+     padding: 20px 0;
+}
+#seccionCinco a {
+    display: block;
+    background-color: #46e30d;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 2em;
+}
+#seccionCinco a:hover {
+    background-color: #3EDA2E ;
+    transition: all 0.5s;
+}
+/* PIE DE PAGINA */
+footer {
+    background-color: #010901c2;
+    padding: 20px 0;
+}
+div#pie\ de\ pagina {
+    overflow: hidden;
+}
+ul.nav {
+    float: left;
+}
+.nav li {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 12px 0 0;
+}
+.nav li a {
+    color: #9b9393;
+    text-decoration: none;
+    padding-right: 1.5em;
+}
+.nav li a:hover {
+    text-decoration: underline;
+}
+.copyright {
+    float: right;
+    color: #9b9393;
+    padding-top: 8px;
+}
+/* MEDIAS QUERIES */
+@media screen and (max-width:3840px) {
+    .container {
+        width: 91%;
+    max-width: 1920px;
+    }
+}
+/* MEDIAS QUERIES */
+@media screen and (max-width:1920px) {
+    container {
+        max-width: 1920px;
+    }
+} 
+/* Aplicar los siguientes estilos cuando el tamaño del viewport se encuentre en un ra de 960px - 1199px */
+@media screen and (min-width: 960px) and (max-width:1199px) {
+    .col h3 {
+        font-size: 1.05rem;
+    }
+}
+h2 {
+    font-size: 1.43rem;
+   }
+}
+/* Aplicar los siguientes estilos cuando el tamaño del viewport se encuentre en menor que 959px */
+@media screen and (max-width:959px) {
+    #intro {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+         -ms-flex-flow: column wrap;
+             flex-flow: column wrap;
+        }
+h1 {
+    font-size: 3.3rem;
+}  
+#descripcion {
+     -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0 0 0 0;
+}
+article > section:nth-child(2) {
+    padding: 20px 0;
+}
+#seccionDos {
+      flex-flow: column wrap;
+}
+.col {
+    padding: 30px 0;
+}
+#seccionTres {
+    flex-flow: column wrap;
+}
+#seccionTres div {
+    flex-basis: 100%; 
+    padding-right: 0;
+}
+#seccionTres a {
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+}
+video {
+    flex-basis: 100%;
+    width: 100%;
+}
+article > section:nth-child(4) {
+    padding: 30px 0 0;
+}
+#seccionCuatro {
+    flex-flow: column;
+}
+#seccionCinco {
+    text-align: center;
+  }
+
+}
+/* aplicar los siguientes esilos cuando el tamaño del viewport sea igual o menos a 659px */
+@media screen and (max-width:659px){
+    #logo, #infoContacto {
+        width: 100%;
+        text-align: center;
+        margin: 5px auto;
+    }
+    #PieDePagina {
+       overflow: hidden;
+    }
+    .nav {
+       float: none; 
+    }
+    .nav li {
+        display: block;
+        margin: 20px 0;
+    }
+    .copyright {
+        float: none;
+        border-top: 1px solid #B484EB;
+        margin-top: 30px;
+    }
